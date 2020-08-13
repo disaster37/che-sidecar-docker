@@ -13,7 +13,6 @@ RUN \
   yum -y install yum-utils &&\
   yum-config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo &&\
   yum -y  install docker-ce --nobest &&\
-  groupadd docker &&\
   usermod -aG docker dev
 
 # Clean image
