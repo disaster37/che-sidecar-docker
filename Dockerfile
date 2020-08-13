@@ -31,4 +31,5 @@ USER user
 
 WORKDIR "/projects"
 
-CMD ["sleep", "infinity"]
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
